@@ -114,3 +114,16 @@
     flex-direction: column;
   }
 }
+
+/* Section styles */
+
+.blueBackground {
+  background: cornflowerblue;
+}
+
+.redBackground {
+  background: indianred;
+}
+
+
+
