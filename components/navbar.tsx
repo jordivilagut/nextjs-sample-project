@@ -1,7 +1,10 @@
+import styles from "../styles/Home.module.css";
+import {NavbarLink} from "../navbarLink";
+
 export function Navbar() {
-    return <nav>
-        <p>Home</p>
-        <p>About Us</p>
-        <p>Contact</p>
+    return <nav className={styles.navBar}>
+        <NavbarLink text="Home"/>
+        <NavbarLink text="About"/>
+        <NavbarLink text="Contact"/>
     </nav>;
 }

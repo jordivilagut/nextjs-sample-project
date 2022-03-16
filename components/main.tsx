@@ -5,7 +5,15 @@ import {SimpleSection} from "./simpleSection";
 export function Main() {
     return <main className={styles.main}>
         <HeroSection/>
-        <SimpleSection styles={styles.blueBackground} text="blue"/>
-        <SimpleSection styles={styles.redBackground} text="red"/>
+        <SimpleSection styles={`
+                        ${styles.blueBackground} 
+                        ${styles.wideSection}
+                        ${styles.innerPadding}`}
+                       text="blue"/>
+        <SimpleSection styles={`
+                        ${styles.greenBackground} 
+                        ${styles.wideSection}
+                        ${styles.innerPadding}`}
+                       text="red"/>
     </main>;
 }
