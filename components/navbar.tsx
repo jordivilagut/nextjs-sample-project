@@ -1,5 +1,5 @@
 import styles from "../styles/Home.module.css";
-import {NavbarLink} from "../navbarLink";
+import {NavbarLink} from "./navbarLink";
 import { SectionModel } from "../model/SectionModel";
 
 interface NavbarProps {

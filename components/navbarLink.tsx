@@ -1,4 +1,4 @@
-import {SectionModel} from "./model/SectionModel";
+import {SectionModel} from "../model/SectionModel";
 
 interface NavbarProps {
     section: SectionModel
