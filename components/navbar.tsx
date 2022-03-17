@@ -1,10 +1,12 @@
 import styles from "../styles/Home.module.css";
 import {NavbarLink} from "../navbarLink";
 
-export function Navbar() {
+interface NavbarProps {
+    sections: string[]
+}
+
+export function Navbar(props: NavbarProps) {
     return <nav className={styles.navBar}>
-        <NavbarLink text="Home"/>
-        <NavbarLink text="About"/>
-        <NavbarLink text="Contact"/>
+        {props.sections.map(s => <NavbarLink text={s}/>) }
     </nav>;
 }

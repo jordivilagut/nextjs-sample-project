@@ -1,19 +1,15 @@
 import styles from "../styles/Home.module.css";
 import {HeroSection} from "./heroSection";
 import {SimpleSection} from "./simpleSection";
+import {SectionModel} from "../model/SectionModel";
 
-export function Main() {
+interface MainProps {
+    sections: SectionModel[]
+}
+
+export function Main(props: MainProps) {
     return <main className={styles.main}>
         <HeroSection/>
-        <SimpleSection styles={`
-                        ${styles.blueBackground} 
-                        ${styles.wideSection}
-                        ${styles.innerPadding}`}
-                       text="blue"/>
-        <SimpleSection styles={`
-                        ${styles.greenBackground} 
-                        ${styles.wideSection}
-                        ${styles.innerPadding}`}
-                       text="red"/>
+        {props.sections.map(s => <SimpleSection section={s}/>)}
     </main>;
 }

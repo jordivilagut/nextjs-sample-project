@@ -1,11 +1,12 @@
+import {SectionModel} from "../model/SectionModel";
+
 interface SimpleSectionProps {
-    styles: string
-    text: string
+    section: SectionModel
 }
 
 export function SimpleSection(props: SimpleSectionProps) {
-    return <section className={props.styles}>
-        <h2>Simple Section</h2>
-        <p>I'm a {props.text} section</p>
+    return <section className={props.section.styles.join(' ')}>
+        <h2>{props.section.title}</h2>
+        <p>I'm a {props.section.text} section</p>
     </section>;
 }
