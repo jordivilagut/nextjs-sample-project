@@ -8,5 +8,5 @@ interface NavbarProps {
 
 export const Navbar = (props: NavbarProps) =>
     <nav className={styles.navBar}>
-        {props.sections.map(s => <NavbarLink section={s}/>)}
+        {props.sections.map(s => <NavbarLink key={s.id} section={s}/>)}
     </nav>;

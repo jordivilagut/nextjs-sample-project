@@ -10,5 +10,5 @@ interface MainProps {
 export const Main = (props: MainProps) =>
     <main className={styles.main}>
         <HeroSection section={props.sections[0]}/>
-        {props.sections.slice(1, props.sections.length).map(s => <SimpleSection section={s}/>)}
+        {props.sections.slice(1, props.sections.length).map(s => <SimpleSection key={s.id} section={s}/>)}
     </main>;
