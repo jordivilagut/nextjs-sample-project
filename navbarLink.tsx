@@ -1,7 +1,9 @@
+import {SectionModel} from "./model/SectionModel";
+
 interface NavbarProps {
-    text: String
+    section: SectionModel
 }
 
 export function NavbarLink(props: NavbarProps) {
-    return <p>{props.text}</p>;
+    return <a href={`#${props.section.id}`}>{props.section.title}</a>;
 }

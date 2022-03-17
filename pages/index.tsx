@@ -7,14 +7,14 @@ import {SiteHead} from "../components/siteHead";
 import { SectionModel } from '../model/SectionModel';
 
 const sections = [
-    new SectionModel("Home", "Lorem Ipsum", [styles.blueBackground, styles.topPadding, styles.wideSection]),
-    new SectionModel("About", "Lorem Ipsum", [styles.greenBackground, styles.topPadding, styles.wideSection]),
-    new SectionModel("Contact", "Lorem Ipsum", [styles.yellowBackground, styles.topPadding, styles.wideSection])]
+    new SectionModel("home", "Home", "Lorem Ipsum", [styles.blueBackground, styles.wideSection]),
+    new SectionModel("about", "About", "Lorem Ipsum", [styles.greenBackground, styles.wideSection]),
+    new SectionModel("contact", "Contact", "Lorem Ipsum", [styles.yellowBackground, styles.wideSection])]
 
 const Home: NextPage = () => (
     <div className={styles.container}>
         <SiteHead/>
-        <Navbar sections={sections.map(s => s.title)}/>
+        <Navbar sections={sections}/>
         <Main sections={sections}/>
         <Footer/>
     </div>
