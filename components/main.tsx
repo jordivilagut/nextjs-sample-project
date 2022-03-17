@@ -7,9 +7,8 @@ interface MainProps {
     sections: SectionModel[]
 }
 
-export function Main(props: MainProps) {
-    return <main className={styles.main}>
+export const Main = (props: MainProps) =>
+    <main className={styles.main}>
         <HeroSection/>
         {props.sections.map(s => <SimpleSection section={s}/>)}
     </main>;
-}

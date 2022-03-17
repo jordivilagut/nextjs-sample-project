@@ -5,8 +5,7 @@ interface NavbarProps {
     sections: string[]
 }
 
-export function Navbar(props: NavbarProps) {
-    return <nav className={styles.navBar}>
-        {props.sections.map(s => <NavbarLink text={s}/>) }
+export const Navbar = (props: NavbarProps) =>
+    <nav className={styles.navBar}>
+        {props.sections.map(s => <NavbarLink text={s}/>)}
     </nav>;
-}
