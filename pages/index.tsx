@@ -7,7 +7,8 @@ import {SiteHead} from "../components/siteHead";
 import { SectionModel } from '../model/SectionModel';
 
 const sections = [
-    new SectionModel("home", "Home", "Lorem Ipsum", [styles.blueBackground, styles.wideSection]),
+    new SectionModel("home", "Sample Project", "Welcome to this site", [styles.greenBackground, styles.wideSection, styles.innerPadding]),
+    new SectionModel("bio", "Bio", "Lorem Ipsum", [styles.blueBackground, styles.wideSection]),
     new SectionModel("about", "About", "Lorem Ipsum", [styles.greenBackground, styles.wideSection]),
     new SectionModel("contact", "Contact", "Lorem Ipsum", [styles.yellowBackground, styles.wideSection])]
 
