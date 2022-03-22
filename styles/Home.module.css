@@ -1,8 +1,3 @@
-.innerPadding {
-  padding: 0 2rem;
-}
-
-
 .topPadding {
   padding-top: 100px;
 }
@@ -134,19 +129,50 @@
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  padding: 80px 40px 20px 40px;
 }
 
-.blueBackground {
-  background: #006e90;
+.heroTextArea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
 }
 
-.greenBackground {
-  background: #99C24D;
+.heroPictureBackground {
+  background-image: url("../assets/images/nice-house.jpeg");
+  background-size: cover;
+  color: white;
 }
 
-.yellowBackground {
-  background: #F18F01;
+.stainedGlass {
+  background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+}
+
+.caobaBg {
+  background: #29231C;
+}
+
+.greenBg {
+  background: #414D34;
+}
+
+.metalBg {
+  background: #383C46;
+}
+
+.beigeBg {
+  background: #B3966D;
+}
+
+.smokeyBg {
+  background: #DEDEDD;
+}
+
+.whiteBg {
+  background: white;
 }
 
 
