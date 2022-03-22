@@ -1,5 +1,5 @@
-import styles from "../styles/Home.module.css";
-import {SectionModel} from "../model/SectionModel";
+import styles from "../../styles/Home.module.css";
+import {SectionModel} from "../../model/SectionModel";
 
 interface HeroSectionProps {
     section: SectionModel

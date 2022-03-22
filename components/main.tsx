@@ -1,7 +1,7 @@
 import styles from "../styles/Home.module.css";
-import {SimpleSection} from "./simpleSection";
+import {SimpleSection} from "./simplesection/simpleSection";
 import {SectionModel} from "../model/SectionModel";
-import {HeroSectionWithPicture} from "./heroSectionWithPicture";
+import {HeroSectionWithPicture} from "./hero/heroSectionWithPicture";
 
 interface MainProps {
     sections: SectionModel[]

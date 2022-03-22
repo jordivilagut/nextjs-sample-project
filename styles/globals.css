@@ -14,3 +14,41 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/** BACKGROUNDS **/
+
+.heroPictureBg {
+  background-image: url("../assets/images/nice-house.jpeg");
+  background-size: cover;
+  color: white;
+}
+
+.stainedGlass {
+  background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+}
+
+.caobaBg {
+  background: #29231C;
+}
+
+.greenBg {
+  background: #414D34;
+}
+
+.metalBg {
+  background: #383C46;
+}
+
+.beigeBg {
+  background: #B3966D;
+}
+
+.smokeyBg {
+  background: #DEDEDD;
+}
+
+.whiteBg {
+  background: white;
+}

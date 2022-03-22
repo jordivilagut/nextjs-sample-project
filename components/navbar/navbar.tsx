@@ -1,6 +1,6 @@
-import styles from "../styles/Home.module.css";
+import styles from "../../styles/Home.module.css";
 import {NavbarLink} from "./navbarLink";
-import { SectionModel } from "../model/SectionModel";
+import { SectionModel } from "../../model/SectionModel";
 
 interface NavbarProps {
     sections: SectionModel[]
